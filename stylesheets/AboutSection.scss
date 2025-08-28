@@ -1,0 +1,112 @@
+.about-container {
+  width: 100%;
+}
+
+.about-wrapper {
+  min-height: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-section {
+  flex: 1;
+  background-color: #D5F9DD; // success main
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+
+  .blob-frame {
+    width: 320px;
+    height: 320px;
+    
+
+    .team-image {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 50% 25% 65% 35%;
+      filter: brightness(1);
+    }
+  }
+
+  .floating-star {
+    position: absolute;
+
+    svg {
+      color: #2d2d2d;
+      font-size: 24px;
+    }
+  }
+
+  .star-1 {
+    top: 20%;
+    right: 15%;
+  }
+  .star-2 {
+    top: 25%;
+    right: 8%;
+  }
+  .star-3 {
+    top: 15%;
+    right: 20%;
+  }
+}
+
+.right-section {
+  flex: 1;
+  background-color: #F7F4F8; // secondary light
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+
+  .title {
+    font-size: 3.5rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .paragraph {
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+
+  .about-btn{
+    position: relative;
+    z-index: 2;
+    .btn-layer{
+        position: absolute;
+        top:60%;
+        width: 120px;
+        height: 50px;
+        left: 56%;
+        transform: translate(-50%, -50%);
+        background-color: #f3f0f0;
+        border: 2px solid #000;
+        border-radius: 10px;
+        z-index: -1;
+    }
+  }
+
+  .about-btn {
+    border-radius: 12px;
+    align-self: flex-start;
+    background-color: #2d2d2d;
+    color: #fff;
+
+    &:hover {
+      background-color: #1f1f1f;
+    }
+  }
+}

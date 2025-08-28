@@ -1,0 +1,123 @@
+.whyus-container {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+  border-bottom: 2px solid #000;
+}
+
+.whyus-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+}
+
+.content-row {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.left-content {
+  flex: 1;
+  max-width: 500px;
+
+  .section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .section-text {
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  .prize-btn{
+    position: relative;
+    z-index: 2;
+    .btn-layer{
+        position: absolute;
+        top:70%;
+        width: 140px;
+        height: 50px;
+        left: 16%;
+        transform: translate(-50%, -50%);
+        background-color: #f3f0f0;
+        border: 2px solid #000;
+        border-radius: 10px;
+        z-index: -1;
+    }
+  }
+  .contact-btn {
+    margin-top: 1rem;
+    border-radius: 12px;
+  }
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    // border: 2px solid #2d2d2d;
+    margin-right: 8rem;
+  }
+}
+
+.awards-container {
+  background-color: #CBBEFE; // replace with theme secondary color if needed
+  border-radius: 24px;
+  border: 2px solid #2d2d2d;
+//   padding: 40px;
+  min-width: 400px;
+  max-width: 500px;
+  box-shadow: 5px 5px 0 rgba(0,0,0,1); /* Solid, sharp */
+
+  @media (max-width: 500px) {
+    min-width: 100%;
+  }
+}
+
+.award-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  border-bottom: 1px solid #2d2d2d;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .award-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .award-dot {
+      font-size: 12px;
+      color: #2d2d2d;
+    }
+
+    .award-name {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  }
+
+  .award-year {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
