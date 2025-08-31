@@ -17,21 +17,21 @@ const ProcessCtaSection = () => {
   const processSteps = [
     {
       id: "panel1",
-      title: "01 - Idea",
+      title: "01 - Connect",
       content:
-        "We start by understanding your vision and goals, conducting thorough research to develop innovative concepts that align with your brand identity.",
+        "Join our vibrant community of developers, creators, and tech enthusiasts. Share your projects and connect with like-minded innovators.",
     },
     {
       id: "panel2",
-      title: "02 - Execution",
+      title: "02 - Collaborate",
       content:
-        "Our expert team brings your ideas to life through meticulous design and development, ensuring every detail meets our high standards of quality.",
+        "Work together on real-world projects, participate in hackathons, and engage in meaningful collaborations that drive innovation forward.",
     },
     {
       id: "panel3",
-      title: "03 - Launch",
+      title: "03 - Grow",
       content:
-        "We handle the complete launch process, providing ongoing support and optimization to ensure your project achieves maximum impact.",
+        "Access mentorship opportunities, freelancing projects, exclusive events, and stay updated with the latest tech trends to advance your career.",
     },
   ];
 
@@ -47,7 +47,7 @@ const ProcessCtaSection = () => {
         </div>
 
         <div className="right-section">
-          <h2 className="section-title">Our process</h2>
+          <h2 className="section-title">How DevGeeks works</h2>
 
           <div className="accordion-list">
             {processSteps.map((step) => (
@@ -79,11 +79,11 @@ const ProcessCtaSection = () => {
         <img src={__star__} alt="Star Icon" className="cta-icon" />
         <div className="cta-content">
           <h1 className="cta-title">
-            Let's create your next big{" "}
-            project {" "}
+            Ready to join the DevGeeks{" "}
+            community {" "}
             <RoughNotation type="underline" show={true} strokeWidth={2}>
-              together
-            </RoughNotation>.
+              today
+            </RoughNotation>?
           </h1>
           <div className="cta-view-btn">
             <div className="btn-layer"></div>

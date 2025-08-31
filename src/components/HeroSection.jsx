@@ -52,16 +52,15 @@ const HeroSection = () => {
                 <img src={__hi__} alt="Hi" style={{filter:'brightness(1)'}} />
               </div>
               <h1 className="title">
-                We&apos;re a creative{" "}
+                Build • Grow • Contribute with{" "}
                 <span className="underline">
-                  design
+                  DevGeeks
                   <img id="curvy" src={__curvy__} alt="Curvy" />
-                </span> agency
+                </span>
               </h1>
               <p className="desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros duis cursus, libero quis viverra
-                ornare.
+                A vibrant hub for developers, indie creators, and tech enthusiasts.
+                Showcase your projects, receive honest feedback, and connect with a supportive community of innovators.
               </p>
               <div className="model-layer-btn">
                 <div className="layer-3d-cta-btn"></div>

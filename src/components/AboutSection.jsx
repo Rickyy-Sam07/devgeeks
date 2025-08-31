@@ -23,18 +23,17 @@ const AboutSection = () => {
         {/* Right Section */}
         <div className="right-section">
           <h2 className='title'>
-            Our agency started back in 2010
+            DevGeeks founded in 2025
           </h2>
 
           <Typography variant="body1" className="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-            ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+            Founded in 2025, DevGeeks is a vibrant hub for developers, indie creators, and tech enthusiasts.
+            Here, you can showcase your projects, receive honest feedback, and connect with a supportive community of innovators.
           </Typography>
 
           <Typography variant="body1" className="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.
+            Whether you're building your first app or scaling your dream startup, DevGeeks is your place to learn, grow, and inspire others.
+            We believe in learning together, building meaningful projects, collaborating across borders, and inspiring the next generation of makers.
           </Typography>
 
           <div className="about-btn">
