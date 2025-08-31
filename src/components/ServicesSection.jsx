@@ -21,12 +21,6 @@ const ServicesSection = () => {
       color: '#C9BFFF'
     },
     {
-      title: 'DevOps Services',
-      description: 'Streamlined deployment, monitoring, and infrastructure management.',
-      icon: ReadMoreOutlinedIcon,
-      color: '#D6F9DD'
-    },
-    {
       title: 'Blockchain Development',
       description: 'Decentralized applications and smart contract development.',
       icon: LibraryBooksOutlinedIcon,
@@ -37,12 +31,6 @@ const ServicesSection = () => {
       description: 'Mobile and desktop applications for iOS, Android, and cross-platform.',
       icon: TripOriginOutlinedIcon,
       color: '#F8E4A6'
-    },
-    {
-      title: 'Cyber Security',
-      description: 'Comprehensive security solutions to protect your digital assets.',
-      icon: WebhookOutlinedIcon,
-      color: '#E4C7F1'
     }
   ];
 
