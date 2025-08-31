@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
 
 :root {
   font-synthesis: none;
@@ -13,39 +12,84 @@
   margin: auto;
 }
 
-/* Custom utilities for Tailwind v4 */
-@utility scrollbar-hidden {
-  &::-webkit-scrollbar {
-    display: none;
-  }
+/* Custom utilities for Tailwind CSS */
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
-@utility text-balance {
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.text-balance {
   text-wrap: balance;
 }
 
-/* Custom animations */
+/* Custom animations with performance optimizations */
 @keyframes float {
   0%, 100% { 
-    transform: translateY(0px) rotate(0deg); 
+    transform: translate3d(0, 0px, 0) rotate(0deg); 
   }
   50% { 
-    transform: translateY(-20px) rotate(5deg); 
+    transform: translate3d(0, -20px, 0) rotate(5deg); 
   }
 }
 
 @keyframes bounce {
   0%, 100% { 
-    transform: scale(1); 
+    transform: scale3d(1, 1, 1); 
   }
   50% { 
-    transform: scale(1.1); 
+    transform: scale3d(1.1, 1.1, 1); 
   }
 }
 
-/* Smooth scrolling */
+/* Optimized bounce animation for curtain scroll indicator */
+@keyframes bounceOptimized {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* Smooth scrolling with better performance */
 html {
   scroll-behavior: smooth;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Performance optimizations for curtain animation */
+body {
+  overflow-x: hidden;
+  transform-style: preserve-3d; /* Enable 3D transforms */
+}
+
+/* Better hardware acceleration hints */
+.curtain-optimized {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Prevent horizontal overflow during curtain animation */
+body {
+  overflow-x: hidden;
 }
 
 /* Custom scrollbar for webkit browsers */

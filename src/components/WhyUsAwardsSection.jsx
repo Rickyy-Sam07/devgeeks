@@ -5,10 +5,10 @@ import "../../stylesheets/WhyUsAwardsSection.scss";
 
 const WhyUsAwardsSection = () => {
   const awards = [
-    { title: "Website of the Year", year: "2022" },
-    { title: "Webdesign Award", year: "2021" },
-    { title: "Website of the Year", year: "2020" },
-    { title: "Webdesign Award", year: "2018" },
+    { title: "Community Hub Launch", year: "2025" },
+    { title: "Tech Innovation Award", year: "2025" },
+    { title: "Best Developer Community", year: "2025" },
+    { title: "Rising Stars Platform", year: "2025" },
   ];
 
   return (
@@ -17,19 +17,21 @@ const WhyUsAwardsSection = () => {
         <div className="content-row">
           {/* Left Content */}
           <div className="left-content">
-            <h2 className="section-title">Why us?</h2>
+            <h2 className="section-title">Why DevGeeks?</h2>
 
             <p className="section-text">
+              Collaboration – Work with peers on real-world projects<br/>
+              Mentorship – Learn from experienced seniors and industry experts<br/>
+              Community – Join a supportive, diverse, and passionate tech family<br/>
+              Tech Insights – Stay updated with the latest in-demand technologies<br/>
+              Opportunities – Access freelancing gigs, mentorship, and exclusive events
+            </p>
+
+            {/* <p className="section-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse varius enim in eros tristique. Duis cursus, viverra
               ornare, eros dolor interdum nulla.
-            </p>
-
-            <p className="section-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros tristique. Duis cursus, viverra
-              ornare, eros dolor interdum nulla.
-            </p>
+            </p> */}
             <div className="prize-btn">
               <div className="btn-layer"></div>
               <Button variant="contained" size="large" className="contact-btn">
@@ -41,7 +43,7 @@ const WhyUsAwardsSection = () => {
 
           {/* Right Content */}
           <div className="right-content">
-            <h2 className="section-title">Our awards</h2>
+            <h2 className="section-title">Our achievements</h2>
 
             <div className="awards-container">
               {awards.map((award, index) => (

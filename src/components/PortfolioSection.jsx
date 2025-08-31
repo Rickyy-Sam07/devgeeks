@@ -8,10 +8,10 @@ import _p3_ from "../assets/ldk3.png";
 const PortfolioSection = () => {
   const projects = [
     {
-      title: "Rogahn",
+      title: "EcoTrack",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros tristique, duis cursus, mi quis viverra ornare.",
-      tags: ["Web design", "Website"],
+        "A mobile app for tracking carbon footprint with AI-powered recommendations. Built by our community members during a hackathon using React Native and machine learning.",
+      tags: ["Mobile App", "AI/ML"],
       image:
             `${_p1_}`,
       bgColor: "#C9BFFE",
@@ -19,10 +19,10 @@ const PortfolioSection = () => {
       reverse: false,
     },
     {
-      title: "Schultz",
+      title: "DeFi Dashboard",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros tristique, duis cursus, mi quis viverra ornare.",
-      tags: ["UI/UX Design", "Design"],
+        "A comprehensive blockchain-based DeFi portfolio tracker with real-time analytics. Developed by our community as an open-source project.",
+      tags: ["Blockchain", "Web3"],
       image:
         `${_p2_}`,
       bgColor: "#FCE4C5",
@@ -30,10 +30,10 @@ const PortfolioSection = () => {
       reverse: true,
     },
     {
-      title: "Gohan",
+      title: "DevMentor",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros tristique, duis cursus, mi quis viverra ornare.",
-      tags: ["Branding Design", "Design"],
+        "A mentorship platform connecting junior developers with industry experts. Created collaboratively by DevGeeks community members to solve real problems.",
+      tags: ["Web Development", "Community"],
       image:
         `${_p3_}`,
       bgColor: "#D5F9DD",

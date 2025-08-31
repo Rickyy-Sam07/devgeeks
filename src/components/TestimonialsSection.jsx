@@ -6,23 +6,23 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-      clientName: "Client Name",
-      companyName: "Company Name",
+        "DevGeeks has been an incredible platform for learning and growing as a developer. The community support and mentorship opportunities are unmatched!",
+      clientName: "Sarah Chen",
+      companyName: "Frontend Developer",
       avatar: "https://i.pravatar.cc/56?img=1",
     },
     {
       quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-      clientName: "Client Name",
-      companyName: "Company Name",
+        "Through DevGeeks, I connected with amazing collaborators and landed my first freelancing project. It's more than just a community - it's a launchpad for careers.",
+      clientName: "Alex Rodriguez",
+      companyName: "Full Stack Developer",
       avatar: "https://i.pravatar.cc/56?img=2",
     },
     {
       quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-      clientName: "Client Name",
-      companyName: "Company Name",
+        "The hackathons and events at DevGeeks pushed me to learn new technologies. I've grown so much as a developer since joining this community.",
+      clientName: "Priya Sharma",
+      companyName: "ML Engineer",
       avatar: "https://i.pravatar.cc/56?img=3",
     },
   ];
@@ -30,7 +30,7 @@ const TestimonialsSection = () => {
   return (
     <section className="testimonials-container">
       <div className="testimonials-wrapper">
-        <h2 className="section-title">What our clients say</h2>
+        <h2 className="section-title">What our community says</h2>
 
         <div className="testimonials-row">
           {testimonials.map((testimonial, index) => (

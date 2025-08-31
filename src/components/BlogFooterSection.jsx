@@ -5,23 +5,23 @@ import "../../stylesheets/BlogFooterSection.scss";
 const BlogFooterSection = () => {
   const blogPosts = [
     {
-      title: "Build a stronger brand with no-code tools",
+      title: "Building Your First Open Source Project",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+        "Learn how to start contributing to open source projects and build your developer portfolio with real-world experience and community collaboration.",
       bgColor: "bg-1",
       graphic: "graphic-1",
     },
     {
-      title: "How marketers can work better with design",
+      title: "Future of AI in Software Development",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+        "Explore how artificial intelligence is transforming the way we write code, from automated testing to intelligent code completion and beyond.",
       bgColor: "bg-2",
       graphic: "graphic-2",
     },
     {
-      title: "A guide to photography website design",
+      title: "DevOps Best Practices for Modern Teams",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+        "Discover essential DevOps practices that help development teams deploy faster, more reliably, and with greater confidence in today's tech landscape.",
       bgColor: "bg-3",
       graphic: "graphic-3",
     },
@@ -90,9 +90,9 @@ const BlogFooterSection = () => {
           <div className="footer-about">
             <h3>DEVGEEKS.</h3>
             <p>
-              Stand out from all the creative agencies out there with Wejoy. A
-              premium creative design agency Webflow Template that features a
-              fun and immersive design to impress your visitors.
+              A vibrant hub for developers, indie creators, and tech enthusiasts founded in 2025.
+              Join our community to showcase projects, receive feedback, and connect with innovators
+              building the next generation of technology.
             </p>
 
             <h4>Subscribe to our newsletter</h4>
@@ -134,6 +134,22 @@ const BlogFooterSection = () => {
                   {link}
                 </a>
               ))}
+            </div>
+          </div>
+
+           {/* Social Links */}
+          <div className="footer-links">
+            <h4>Follow Us</h4>
+            <div className="link-col">
+              <a href="https://www.linkedin.com/groups/14694232/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+              <a href="https://www.youtube.com/@DevGeeks_Community" target="_blank" rel="noopener noreferrer">
+                YouTube
+              </a>
+              <a href="https://www.instagram.com/devgeeks_000?igsh=MTFobndnbXBzcW83eA%3D%3D" target="_blank" rel="noopener noreferrer">
+                Instagram
+              </a>
             </div>
           </div>
         </div>
