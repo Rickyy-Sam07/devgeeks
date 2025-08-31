@@ -12,7 +12,7 @@ const BlogFooterSection = () => {
       graphic: "graphic-1",
     },
     {
-      title: "The Future of AI in Software Development",
+      title: "Future of AI in Software Development",
       description:
         "Explore how artificial intelligence is transforming the way we write code, from automated testing to intelligent code completion and beyond.",
       bgColor: "bg-2",
@@ -137,7 +137,7 @@ const BlogFooterSection = () => {
             </div>
           </div>
 
-          {/* Social Links */}
+           {/* Social Links */}
           <div className="footer-links">
             <h4>Follow Us</h4>
             <div className="link-col">

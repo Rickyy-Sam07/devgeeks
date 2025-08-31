@@ -20,18 +20,18 @@ const WhyUsAwardsSection = () => {
             <h2 className="section-title">Why DevGeeks?</h2>
 
             <p className="section-text">
-              🤝 Collaboration – Work with peers on real-world projects<br/>
-              🎓 Mentorship – Learn from experienced seniors and industry experts<br/>
-              🌍 Community – Join a supportive, diverse, and passionate tech family<br/>
-              ⚡ Tech Insights – Stay updated with the latest in-demand technologies<br/>
-              🏆 Opportunities – Access freelancing gigs, mentorship, and exclusive events
+              Collaboration – Work with peers on real-world projects<br/>
+              Mentorship – Learn from experienced seniors and industry experts<br/>
+              Community – Join a supportive, diverse, and passionate tech family<br/>
+              Tech Insights – Stay updated with the latest in-demand technologies<br/>
+              Opportunities – Access freelancing gigs, mentorship, and exclusive events
             </p>
 
-            <p className="section-text">
+            {/* <p className="section-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse varius enim in eros tristique. Duis cursus, viverra
               ornare, eros dolor interdum nulla.
-            </p>
+            </p> */}
             <div className="prize-btn">
               <div className="btn-layer"></div>
               <Button variant="contained" size="large" className="contact-btn">
