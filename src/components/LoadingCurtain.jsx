@@ -59,8 +59,8 @@ const BottomPanel = styled(Box)(({ progress }) => {
 
 // Logo styling
 const Logo = styled('img')({
-  maxHeight: '80px',
-  maxWidth: '300px',
+  maxHeight: '380px',
+  maxWidth: '2000px',
   objectFit: 'contain',
   margin: '1px 0', // Add margin to position closer to separation line
 });
@@ -77,6 +77,7 @@ const ScrollHint = styled(Box)({
   animation: 'bounce 2s infinite',
   
 });
+
 
 // Progress indicator
 const ProgressBar = styled(Box)(({ progress }) => ({
@@ -101,6 +102,7 @@ const ProgressBar = styled(Box)(({ progress }) => ({
     transition: 'width 0.1s ease-out',
   },
 }));
+
 
 const LoadingCurtain = ({ onComplete }) => {
   const [progress, setProgress] = useState(0);
